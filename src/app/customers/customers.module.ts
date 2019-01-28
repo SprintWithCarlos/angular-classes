@@ -11,6 +11,6 @@ import { FilterTextboxComponent } from "./customers-list/filter-textbox.componen
     CustomersListComponent,
     FilterTextboxComponent
   ],
-  exports: [CustomersComponent]
+  exports: [CustomersComponent, CustomersListComponent]
 })
 export class CustomersModule {}
