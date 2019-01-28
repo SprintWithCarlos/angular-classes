@@ -1,13 +1,15 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-root",
   template: `
-    <h1>Hola Caracola</h1>
-    <p>Saludos</p>
-  `,
-  styles: ["h1 { font-weight: normal;}", "p {color: purple;}"]
+    <app-customers></app-customers>
+  `
 })
-export class AppComponent {
-  title = "app";
+export class AppComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit() {
+    // We call a service that gets us the data
+  }
 }
