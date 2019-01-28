@@ -9,6 +9,7 @@ import { ICustomer } from "../../shared/interfaces";
   styleUrls: ["./customers-list.component.css"]
 })
 export class CustomersListComponent implements OnInit {
+  //Aquí hacemos uso de la interfaz, indicándola como tipo de filteredCustomers y además le asignamos un valor inicial(inicializamos) como un arreglo (array) vacío.
   filteredCustomers: ICustomer[] = [];
   customersOrderTotal: number;
   currencyCode: "USD";
